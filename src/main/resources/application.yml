@@ -1,0 +1,23 @@
+files:
+  input:
+    path: ${user.home}/data/in
+    suffix: .dat
+  output:
+    path: ${user.home}/data/out
+    suffix: .done.dat
+    template: |
+      Customers amount: %s
+      Salesmen amount: %s
+      Most expensive sale ID: %s
+      Worst salesman: %s
+
+parser:
+  separator:
+    data: "ç"
+    item: ","
+    field: "-"
+  code:
+    salesman: "001"
+    customer: "002"
+    sale: "003"
+
